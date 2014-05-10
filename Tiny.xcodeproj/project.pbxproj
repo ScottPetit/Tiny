@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37611D2E27D2451CBA694CAD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF652F9731E74B16AD8EB333 /* libPods.a */; };
+		5A5ABB97FEC442DAA8D5116F /* libPods-TinyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2702D7AC8A4DECBF5FEC92 /* libPods-TinyTests.a */; };
 		D213A4F2191E06C200D71991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213A4F1191E06C200D71991 /* Foundation.framework */; };
 		D213A4F4191E06C200D71991 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213A4F3191E06C200D71991 /* CoreGraphics.framework */; };
 		D213A4F6191E06C200D71991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213A4F5191E06C200D71991 /* UIKit.framework */; };
@@ -19,6 +21,10 @@
 		D213A535191E071A00D71991 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D213A52B191E071A00D71991 /* Images.xcassets */; };
 		D213A540191E074A00D71991 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D213A53C191E074A00D71991 /* InfoPlist.strings */; };
 		D213A542191E076200D71991 /* TinyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D213A53A191E074A00D71991 /* TinyTests.m */; };
+		D213A548191E0C1F00D71991 /* Tiny.m in Sources */ = {isa = PBXBuildFile; fileRef = D213A547191E0C1F00D71991 /* Tiny.m */; };
+		D213A54D191E0EB400D71991 /* BitlyURLShortenerService.m in Sources */ = {isa = PBXBuildFile; fileRef = D213A54C191E0EB400D71991 /* BitlyURLShortenerService.m */; };
+		D213A551191E154300D71991 /* NTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D213A550191E154300D71991 /* NTAViewController.m */; };
+		D213A554191E1A2F00D71991 /* GooglURLShortenerService.m in Sources */ = {isa = PBXBuildFile; fileRef = D213A553191E1A2F00D71991 /* GooglURLShortenerService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E2702D7AC8A4DECBF5FEC92 /* libPods-TinyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF652F9731E74B16AD8EB333 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D213A4EE191E06C200D71991 /* Tiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D213A4F1191E06C200D71991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D213A4F3191E06C200D71991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +56,17 @@
 		D213A53A191E074A00D71991 /* TinyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinyTests.m; sourceTree = "<group>"; };
 		D213A53D191E074A00D71991 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D213A53E191E074A00D71991 /* TinyTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TinyTests-Info.plist"; sourceTree = "<group>"; };
+		D213A546191E0C1F00D71991 /* Tiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiny.h; sourceTree = "<group>"; };
+		D213A547191E0C1F00D71991 /* Tiny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiny.m; sourceTree = "<group>"; };
+		D213A54B191E0EB400D71991 /* BitlyURLShortenerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitlyURLShortenerService.h; sourceTree = "<group>"; };
+		D213A54C191E0EB400D71991 /* BitlyURLShortenerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitlyURLShortenerService.m; sourceTree = "<group>"; };
+		D213A54F191E154300D71991 /* NTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAViewController.h; sourceTree = "<group>"; };
+		D213A550191E154300D71991 /* NTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTAViewController.m; sourceTree = "<group>"; };
+		D213A552191E1A2F00D71991 /* GooglURLShortenerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglURLShortenerService.h; sourceTree = "<group>"; };
+		D213A553191E1A2F00D71991 /* GooglURLShortenerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglURLShortenerService.m; sourceTree = "<group>"; };
+		D213A555191E556F00D71991 /* NTAURLShortenerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAURLShortenerService.h; sourceTree = "<group>"; };
+		D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyTests.xcconfig"; path = "Pods/Pods-TinyTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 				D213A4F4191E06C200D71991 /* CoreGraphics.framework in Frameworks */,
 				D213A4F6191E06C200D71991 /* UIKit.framework in Frameworks */,
 				D213A4F2191E06C200D71991 /* Foundation.framework in Frameworks */,
+				37611D2E27D2451CBA694CAD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,7 @@
 				D213A50B191E06C200D71991 /* XCTest.framework in Frameworks */,
 				D213A50D191E06C200D71991 /* UIKit.framework in Frameworks */,
 				D213A50C191E06C200D71991 /* Foundation.framework in Frameworks */,
+				5A5ABB97FEC442DAA8D5116F /* libPods-TinyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +103,8 @@
 				D213A52C191E071A00D71991 /* Tests */,
 				D213A4F0191E06C200D71991 /* Frameworks */,
 				D213A4EF191E06C200D71991 /* Products */,
+				D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */,
+				E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +124,8 @@
 				D213A4F3191E06C200D71991 /* CoreGraphics.framework */,
 				D213A4F5191E06C200D71991 /* UIKit.framework */,
 				D213A50A191E06C200D71991 /* XCTest.framework */,
+				BF652F9731E74B16AD8EB333 /* libPods.a */,
+				8E2702D7AC8A4DECBF5FEC92 /* libPods-TinyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,6 +133,9 @@
 		D213A4F7191E06C200D71991 /* Tiny */ = {
 			isa = PBXGroup;
 			children = (
+				D213A546191E0C1F00D71991 /* Tiny.h */,
+				D213A547191E0C1F00D71991 /* Tiny.m */,
+				D213A54A191E0E8A00D71991 /* NTAURLShortenerService */,
 			);
 			path = Tiny;
 			sourceTree = "<group>";
@@ -127,6 +155,7 @@
 			children = (
 				D213A522191E071A00D71991 /* NTAAppDelegate.h */,
 				D213A523191E071A00D71991 /* NTAAppDelegate.m */,
+				D213A54E191E153500D71991 /* Controllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -176,6 +205,27 @@
 			path = "Other Sources";
 			sourceTree = "<group>";
 		};
+		D213A54A191E0E8A00D71991 /* NTAURLShortenerService */ = {
+			isa = PBXGroup;
+			children = (
+				D213A555191E556F00D71991 /* NTAURLShortenerService.h */,
+				D213A54B191E0EB400D71991 /* BitlyURLShortenerService.h */,
+				D213A54C191E0EB400D71991 /* BitlyURLShortenerService.m */,
+				D213A552191E1A2F00D71991 /* GooglURLShortenerService.h */,
+				D213A553191E1A2F00D71991 /* GooglURLShortenerService.m */,
+			);
+			path = NTAURLShortenerService;
+			sourceTree = "<group>";
+		};
+		D213A54E191E153500D71991 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D213A54F191E154300D71991 /* NTAViewController.h */,
+				D213A550191E154300D71991 /* NTAViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213A51A191E06C200D71991 /* Build configuration list for PBXNativeTarget "Tiny" */;
 			buildPhases = (
+				B16F4B17E5DE47C5A5409909 /* Check Pods Manifest.lock */,
 				D213A4EA191E06C200D71991 /* Sources */,
 				D213A4EB191E06C200D71991 /* Frameworks */,
 				D213A4EC191E06C200D71991 /* Resources */,
+				0C5CB4A8D31743A1ADFD0F29 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213A51D191E06C200D71991 /* Build configuration list for PBXNativeTarget "TinyTests" */;
 			buildPhases = (
+				EB4EADE66DEE42AEB27DDAEF /* Check Pods Manifest.lock */,
 				D213A505191E06C200D71991 /* Sources */,
 				D213A506191E06C200D71991 /* Frameworks */,
 				D213A507191E06C200D71991 /* Resources */,
+				90BA08CE3C3F4912839ED81B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,13 +321,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C5CB4A8D31743A1ADFD0F29 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90BA08CE3C3F4912839ED81B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TinyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16F4B17E5DE47C5A5409909 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4EADE66DEE42AEB27DDAEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D213A4EA191E06C200D71991 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D213A533191E071A00D71991 /* main.m in Sources */,
+				D213A548191E0C1F00D71991 /* Tiny.m in Sources */,
 				D213A531191E071A00D71991 /* NTAAppDelegate.m in Sources */,
+				D213A554191E1A2F00D71991 /* GooglURLShortenerService.m in Sources */,
+				D213A54D191E0EB400D71991 /* BitlyURLShortenerService.m in Sources */,
+				D213A551191E154300D71991 /* NTAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +510,7 @@
 		};
 		D213A51B191E06C200D71991 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +524,7 @@
 		};
 		D213A51C191E06C200D71991 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -415,6 +538,7 @@
 		};
 		D213A51E191E06C200D71991 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiny.app/Tiny";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -437,6 +561,7 @@
 		};
 		D213A51F191E06C200D71991 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiny.app/Tiny";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -472,6 +597,7 @@
 				D213A51C191E06C200D71991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D213A51D191E06C200D71991 /* Build configuration list for PBXNativeTarget "TinyTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +606,7 @@
 				D213A51F191E06C200D71991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

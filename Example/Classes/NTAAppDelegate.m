@@ -7,13 +7,17 @@
 //
 
 #import "NTAAppDelegate.h"
+#import "NTAViewController.h"
 
 @implementation NTAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    NTAViewController *viewController = [[NTAViewController alloc] init];
+    self.window.rootViewController = viewController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
