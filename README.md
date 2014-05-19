@@ -16,7 +16,6 @@ Tiny provides two objects that conform to the NTAURLShortenerService protocol, B
     [Tiny shortenURL:[NSURL URLWithString:@"http://google.com"] withService:service completion:^(NSURL *shortURL, NSError *error) {
  		       NSLog(@"Short URL - %@", shortURL);
     }];
-}
 ```
 
 It’s that easy.
