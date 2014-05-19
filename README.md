@@ -11,12 +11,11 @@ Tiny is an extensible wrapper for URL Shorteners.  It can currently shorten link
 Tiny provides two objects that conform to the NTAURLShortenerService protocol, BitlyURLShortenerService and GooglURLShortenerService.  Simply create a service object with any required data (an access token in bitlys case) and pass it to Tiny.  Tiny provides a single class method that does all the work you need to get shortened URLs back.  All in all this is what a general usage would look like
 
 ```objective-c
-    GooglURLShortenerService *service = [GooglURLShortenerService service];
+GooglURLShortenerService *service = [GooglURLShortenerService service];
     
-    [Tiny shortenURL:[NSURL URLWithString:@"http://google.com"] withService:service completion:^(NSURL *shortURL, NSError *error) {
- 		       NSLog(@“Short URL - %@ “, shortURL);
-    }];
-}
+[Tiny shortenURL:[NSURL URLWithString:@"http://google.com"] withService:service completion:^(NSURL *shortURL, NSError *error) {
+    NSLog(@"Short URL - %@", shortURL);
+}];
 ```
 
 It’s that easy.
