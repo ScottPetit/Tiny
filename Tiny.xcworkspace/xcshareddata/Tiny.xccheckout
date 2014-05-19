@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B358A4E7-1397-417F-9A76-FF1D86BEAB9D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tiny</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7A8BCD27-942B-4D4C-B4E5-EAA8DB608441</key>
+		<string>ssh://github.com/ScottPetit/Tiny.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tiny.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7A8BCD27-942B-4D4C-B4E5-EAA8DB608441</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ScottPetit/Tiny.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7A8BCD27-942B-4D4C-B4E5-EAA8DB608441</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7A8BCD27-942B-4D4C-B4E5-EAA8DB608441</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tiny</string>
+		</dict>
+	</array>
+</dict>
+</plist>
