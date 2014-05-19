@@ -9,4 +9,6 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, '6.0'
   spec.requires_arc = true
   spec.frameworks = 'Foundation'
+  spec.dependency 'CMDQueryStringSerialization', '~> 0.2'
+  spec.source_files = 'Tiny/*.{h,m}', 'Tiny/NTAURLShortenerService/*.{h,m}' 
 end
