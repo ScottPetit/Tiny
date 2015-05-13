@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37611D2E27D2451CBA694CAD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF652F9731E74B16AD8EB333 /* libPods.a */; };
-		5A5ABB97FEC442DAA8D5116F /* libPods-TinyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E2702D7AC8A4DECBF5FEC92 /* libPods-TinyTests.a */; };
 		D213A4F2191E06C200D71991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213A4F1191E06C200D71991 /* Foundation.framework */; };
 		D213A4F4191E06C200D71991 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213A4F3191E06C200D71991 /* CoreGraphics.framework */; };
 		D213A4F6191E06C200D71991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213A4F5191E06C200D71991 /* UIKit.framework */; };
@@ -38,7 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E2702D7AC8A4DECBF5FEC92 /* libPods-TinyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		674E723628A2E509B4C42EE3 /* Pods-TinyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinyTests/Pods-TinyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7033D5F12CAC77A7097134BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B098327A17A414170C95E3E3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BA63FBCBC15F7819AE34FA82 /* Pods-TinyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinyTests/Pods-TinyTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF652F9731E74B16AD8EB333 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D213A4EE191E06C200D71991 /* Tiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D213A4F1191E06C200D71991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,8 +67,6 @@
 		D213A552191E1A2F00D71991 /* GooglURLShortenerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooglURLShortenerService.h; sourceTree = "<group>"; };
 		D213A553191E1A2F00D71991 /* GooglURLShortenerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooglURLShortenerService.m; sourceTree = "<group>"; };
 		D213A555191E556F00D71991 /* NTAURLShortenerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTAURLShortenerService.h; sourceTree = "<group>"; };
-		D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyTests.xcconfig"; path = "Pods/Pods-TinyTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +88,23 @@
 				D213A50B191E06C200D71991 /* XCTest.framework in Frameworks */,
 				D213A50D191E06C200D71991 /* UIKit.framework in Frameworks */,
 				D213A50C191E06C200D71991 /* Foundation.framework in Frameworks */,
-				5A5ABB97FEC442DAA8D5116F /* libPods-TinyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007802357CADC0C4F8E431DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7033D5F12CAC77A7097134BC /* Pods.debug.xcconfig */,
+				B098327A17A414170C95E3E3 /* Pods.release.xcconfig */,
+				674E723628A2E509B4C42EE3 /* Pods-TinyTests.debug.xcconfig */,
+				BA63FBCBC15F7819AE34FA82 /* Pods-TinyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D213A4E5191E06C200D71991 = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +113,7 @@
 				D213A52C191E071A00D71991 /* Tests */,
 				D213A4F0191E06C200D71991 /* Frameworks */,
 				D213A4EF191E06C200D71991 /* Products */,
-				D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */,
-				E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */,
+				007802357CADC0C4F8E431DE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +134,6 @@
 				D213A4F5191E06C200D71991 /* UIKit.framework */,
 				D213A50A191E06C200D71991 /* XCTest.framework */,
 				BF652F9731E74B16AD8EB333 /* libPods.a */,
-				8E2702D7AC8A4DECBF5FEC92 /* libPods-TinyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,11 +260,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213A51D191E06C200D71991 /* Build configuration list for PBXNativeTarget "TinyTests" */;
 			buildPhases = (
-				EB4EADE66DEE42AEB27DDAEF /* Check Pods Manifest.lock */,
 				D213A505191E06C200D71991 /* Sources */,
 				D213A506191E06C200D71991 /* Frameworks */,
 				D213A507191E06C200D71991 /* Resources */,
-				90BA08CE3C3F4912839ED81B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,40 +340,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90BA08CE3C3F4912839ED81B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-TinyTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B16F4B17E5DE47C5A5409909 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EB4EADE66DEE42AEB27DDAEF /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,7 +486,7 @@
 		};
 		D213A51B191E06C200D71991 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */;
+			baseConfigurationReference = 7033D5F12CAC77A7097134BC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -524,7 +500,7 @@
 		};
 		D213A51C191E06C200D71991 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D52EE4C46BEA4536ADBBE17D /* Pods.xcconfig */;
+			baseConfigurationReference = B098327A17A414170C95E3E3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -538,7 +514,6 @@
 		};
 		D213A51E191E06C200D71991 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiny.app/Tiny";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -561,7 +536,6 @@
 		};
 		D213A51F191E06C200D71991 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E793464AB6B54A59996EC7F8 /* Pods-TinyTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiny.app/Tiny";
 				FRAMEWORK_SEARCH_PATHS = (

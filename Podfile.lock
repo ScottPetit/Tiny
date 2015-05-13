@@ -1,16 +1,13 @@
 PODS:
-  - CMDQueryStringSerialization (0.2.0)
-  - OCMock (2.2.4)
-  - SPYTestLog (0.0.3)
+  - CMDQueryStringSerialization (0.3.2):
+    - ISO8601
+  - ISO8601 (0.2.0)
 
 DEPENDENCIES:
   - CMDQueryStringSerialization (~> 0.2)
-  - OCMock
-  - SPYTestLog
 
 SPEC CHECKSUMS:
-  CMDQueryStringSerialization: 6e9b97d0e4d9547419b6f9b428adc423a6e6e511
-  OCMock: 5008fae4b4789b8fc3e48cd7660f2eb5ef8ce89e
-  SPYTestLog: 830880fc633fabfb083f1f51f707af05a3ac51de
+  CMDQueryStringSerialization: 03c5d9847a4eaa2b3e4e439ce1ae24f914cc7fe1
+  ISO8601: 962282de75074c38bbfaa7b133b0e743ed6deb8d
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.37.1
