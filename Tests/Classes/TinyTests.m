@@ -7,28 +7,73 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "BitlyURLShortenerService.h"
+#import "GooglURLShortenerService.h"
 
-@interface TinyTests : XCTestCase
+@interface BitlyURLShortenerServiceTests : XCTestCase
+
+@property (nonatomic, strong) NSString *accessToken;
+@property (nonatomic, strong) BitlyURLShortenerService *service;
 
 @end
 
-@implementation TinyTests
+@implementation BitlyURLShortenerServiceTests
 
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    self.accessToken = @"this-is-my-access-token";
+    self.service = [BitlyURLShortenerService serviceWithAccessToken:self.accessToken];
 }
 
-- (void)tearDown
+- (void)testServiceStoresAccessToken
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+    XCTAssertEqualObjects(self.service.accessToken, self.accessToken);
 }
 
-- (void)testExample
+- (void)testCreatingAURLRequestForGoogle
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSURLRequest *request = [self.service URLRequestToShortenURL:[NSURL URLWithString:@"http://google.com"]];
+    NSString *expectedURLString = @"https://api-ssl.bitly.com/v3/shorten?access_token=this-is-my-access-token&longURL=http%3A%2F%2Fgoogle.com";
+    
+    XCTAssertEqualObjects([request.URL absoluteString], expectedURLString);
+}
+
+@end
+
+@interface GooglURLShortenerServiceTests : XCTestCase
+
+@property (nonatomic, strong) NSString *apiKey;
+
+@end
+
+@implementation GooglURLShortenerServiceTests
+
+- (void)setUp
+{
+    [super setUp];
+    
+    self.apiKey = @"this-is-my-api-key";
+}
+
+- (void)testServiceStoresAPIKey
+{
+    GooglURLShortenerService *service = [GooglURLShortenerService service];
+    XCTAssertNil(service.apiKey);
+    
+    service = [GooglURLShortenerService serviceWithAPIKey:self.apiKey];
+    XCTAssertEqualObjects(service.apiKey, self.apiKey);
+}
+
+- (void)testCreatingAURLRequestForGoogle
+{
+    NSURL *URLToShorten = [NSURL URLWithString:@"http://google.com"];
+    GooglURLShortenerService *service = [GooglURLShortenerService service];
+    NSURLRequest *request = [service URLRequestToShortenURL:URLToShorten];
+    NSString *expectedURLString = @"https://www.googleapis.com/urlshortener/v1/url";
+    
+    XCTAssertEqualObjects(request.URL.absoluteString, expectedURLString);
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @interface BitlyURLShortenerService : NSObject <NTAURLShortenerService>
 
-+ (instancetype)bitlyShortenerWithAccessToken:(NSString *)accessToken;
++ (instancetype)serviceWithAccessToken:(NSString *)accessToken;
 - (instancetype)initWithAccessToken:(NSString *)accessToken;
 
 @property (nonatomic, copy, readonly) NSString *accessToken;

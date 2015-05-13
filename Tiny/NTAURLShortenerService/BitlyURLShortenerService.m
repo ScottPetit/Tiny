@@ -19,7 +19,7 @@ static NSString * BitlyLongURLKey = @"longURL";
 
 @implementation BitlyURLShortenerService
 
-+ (instancetype)bitlyShortenerWithAccessToken:(NSString *)accessToken
++ (instancetype)serviceWithAccessToken:(NSString *)accessToken
 {
     return [[self alloc] initWithAccessToken:accessToken];
 }

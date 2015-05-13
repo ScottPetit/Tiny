@@ -7,9 +7,15 @@
 //
 
 #import "GooglURLShortenerService.h"
+#import <CMDQueryStringSerialization/CMDQueryStringSerialization.h>
+
+@interface GooglURLShortenerService ()
+
+@property (nonatomic, strong) NSURL *requestURL;
+
+@end
 
 static NSString * GooglBaseURL = @"https://www.googleapis.com/urlshortener/v1/url";
-static NSString * GooglLongURLKey = @"longUrl";
 
 @implementation GooglURLShortenerService
 
@@ -17,7 +23,38 @@ static NSString * GooglLongURLKey = @"longUrl";
 
 + (instancetype)service
 {
-    return [[self alloc] init];
+    return [[self alloc] initWithAPIKey:nil];
+}
+
++ (instancetype)serviceWithAPIKey:(NSString *)key
+{
+    return [[self alloc] initWithAPIKey:key];
+}
+
+- (instancetype)initWithAPIKey:(NSString *)key
+{
+    self = [super init];
+    if (self)
+    {
+        _apiKey = [key copy];
+    }
+    return self;
+}
+
+#pragma mark - Accessors
+
+- (NSURL *)requestURL
+{
+    if (!_requestURL) {
+        NSString *URLString = GooglBaseURL;
+        if (self.apiKey) {
+            NSDictionary *dictionary = @{@"key" : self.apiKey};
+            NSString *queryString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary];
+            URLString = [GooglBaseURL stringByAppendingString:queryString];
+        }
+        _requestURL = [NSURL URLWithString:URLString];
+    }
+    return _requestURL;
 }
 
 #pragma mark - NTAURLShortenerService
@@ -30,10 +67,8 @@ static NSString * GooglLongURLKey = @"longUrl";
         NSLog(@"URL %@ is required to create a Googl URL", URL);
         return nil;
     }
-    
-    NSURL *requestURL = [NSURL URLWithString:GooglBaseURL];
-    
-    NSMutableURLRequest *URLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+        
+    NSMutableURLRequest *URLRequest = [NSMutableURLRequest requestWithURL:self.requestURL];
     [URLRequest setHTTPMethod:@"POST"];
     [URLRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     
