@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'Tiny'
-  spec.version = '1.0.1'
+  spec.version = '1.0.2'
   spec.authors = {'Scott Petit' => 'petit.scott@gmail.com'}
   spec.homepage = 'https://github.com/ScottPetit/Tiny'
   spec.summary = 'An extensible wrapper around URL Shorteners'

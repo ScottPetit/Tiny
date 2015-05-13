@@ -50,7 +50,7 @@ static NSString * GooglBaseURL = @"https://www.googleapis.com/urlshortener/v1/ur
         if (self.apiKey) {
             NSDictionary *dictionary = @{@"key" : self.apiKey};
             NSString *queryString = [CMDQueryStringSerialization queryStringWithDictionary:dictionary];
-            URLString = [GooglBaseURL stringByAppendingString:queryString];
+            URLString = [GooglBaseURL stringByAppendingFormat:@"?%@", queryString];
         }
         _requestURL = [NSURL URLWithString:URLString];
     }

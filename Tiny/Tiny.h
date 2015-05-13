@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "NTAURLShortenerService.h"
+#import "GooglURLShortenerService.h"
+#import "BitlyURLShortenerService.h"
 
 typedef void(^TinyURLShortenerCompletionBlock)(NSURL *shortURL, NSError *error);
 
